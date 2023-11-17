@@ -1,6 +1,7 @@
 import { ConnectWallet } from '@thirdweb-dev/react';
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom"; // Import NavLink
+import TRCLogo from "../assets/TRC.png"
 
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
     <div className="navbar menu-lg trcNavColor">
       <div className="navbar-start">
         <img
-          src="https://tbcrewardcoin.online/assets/trcfrontend/images/favicon.png"
+          src={TRCLogo}
           width={60}
         />
       </div>
@@ -22,14 +23,14 @@ const Navbar = () => {
     <ul className="menu menu-horizontal  z-[10] px-1">
       <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/about">About</NavLink></li>
-      <li><NavLink to="/nft-pass">TokenizedNFT</NavLink></li>
+      <li><NavLink to="/tokenized-nfts">TokenizedNFT</NavLink></li>
       <li><NavLink to="/news">News</NavLink></li>
       <li tabIndex={0}>
         <details>
           <summary>Earn CTX</summary>
           <ul className="p-2">
             <li><NavLink to="/claim-airdrop">Airdrop</NavLink></li>
-            <li><NavLink to="/collect-free-token">Collect Free Token</NavLink></li>
+            <li><NavLink to="/collect-free-token">Collect Free Tokens</NavLink></li>
             <li><NavLink to="/earn-ctx">Giveaway</NavLink></li>
           </ul>
         </details>
@@ -38,7 +39,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-  <NavLink to="/portal" className="btn smartbtn hidden lg:flex hover:bg-red-600 transition duration-300">Goto Smart Portal</NavLink>
+  <NavLink to="/#" className="btn smartbtn hidden lg:flex hover:bg-red-600 transition duration-300">Goto Smart Portal</NavLink>
   <div className="relative group">
           <button
             className="btn btn-ghost lg:hidden"
@@ -68,7 +69,7 @@ const Navbar = () => {
               <NavLink to="/about">About</NavLink>
               </li>
               <li>
-              <NavLink to="/nft-pass">TokenizedNFT</NavLink>
+              <NavLink to="/tokenized-nfts">TokenizedNFT</NavLink>
               </li>
               <li>
               <NavLink to="/news">News</NavLink>
@@ -77,13 +78,13 @@ const Navbar = () => {
                 <a>Earn CTX</a>
                 <ul className="p-2">
                   <li>
-                    <a>Airdrop</a>
+                  <NavLink to="/claim-airdrop">Claim Airdrop</NavLink>                  
                   </li>
                   <li>
-                    <a>Collect Free Token</a>
+                  <NavLink to="/collect-free-token">Collect Free Tokens</NavLink>  
                   </li>
                   <li>
-                    <a>Giveaway</a>
+                  <NavLink to="/earn-ctx">Giveaway</NavLink>                  
                   </li>
                 </ul>
               </li>

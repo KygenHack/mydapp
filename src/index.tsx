@@ -9,6 +9,7 @@ import "./styles/globals.css";
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
 const activeChain = "ethereum";
+const activeAPI = process.env.REACT_APP_TEMPLATE_CLIENT_ID;
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
@@ -16,7 +17,7 @@ root.render(
   <React.StrictMode>
     <ThirdwebProvider
       activeChain={activeChain}
-      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+      clientId={activeAPI}
     >
       <App />
     </ThirdwebProvider>

@@ -23,6 +23,12 @@ body {
   background: #ebc45b;
 }
 
+.btnflex {
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+}
+
 .bg-faq {
   --tw-bg-opacity: 1;
   background-color: #ebc45b;

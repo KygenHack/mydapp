@@ -12,15 +12,30 @@ const Hero = () => {
       <center><img
                             src={Logo}
                             alt="TRC"
-                            width="200px"
+                            width="300px"
                             className=""
                           /></center>
       <h1 className="text-4xl font-bold tracking-tight text-hero headerColor sm:text-6xl">
           Tokenized Reward Community
         </h1>          
         <p className="text-lg textHeroP max-w-prose mx-auto">Imagine being part of a decentralized social media platform where every post, like, or comment you make earns you real-life reward</p>
-
-          <a href="/nft-membership" className="btn px-8 py-3 text-lg smartbtn hover:bg-red-600 transition duration-300">Get Membership Pass</a>
+          <div className='gap-5 btnflex'>
+          <a href="/nft-membership" className="btn px-8 py-3 text-lg smartbtn hover:bg-red-600 transition duration-300 mt-4 mb-4">Buy Now</a>
+          <a href="/nft-membership" className="btn px-8 py-3 text-lg smartbtn hover:bg-red-600 transition duration-300 mt-4 mb-4">Chart  <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
+          </svg></a>
+          </div>
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ const LaunchCard = () => {
           className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 smartbtn px-5 py-3 text-gray-500 transition hover:text-gray-700 focus:outline-none focus:ring"
           type="button"
         >
-          <span className="text-sm font-medium" ><NavLink to="/portal">Start Mining </NavLink></span>
+          <span className="text-sm font-medium" >Start Mining </span>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"

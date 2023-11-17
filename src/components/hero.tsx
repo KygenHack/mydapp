@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from "../assets/TRC.png"
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
       </div>
       <center><img
-                            src="https://tbcrewardcoin.online/assets/trcfrontend/images/favicon.png"
+                            src={Logo}
                             alt="TRC"
                             width="200px"
                             className=""
@@ -17,8 +18,8 @@ const Hero = () => {
       <h1 className="text-4xl font-bold tracking-tight text-hero headerColor sm:text-6xl">
           Tokenized Reward Community
         </h1>          
-        <p className="text-lg textHeroP max-w-prose mx-auto">Imagine being part of a decentralized social media platform where every post, like, or comment you make earns you tokens</p>
-          
+        <p className="text-lg textHeroP max-w-prose mx-auto">Imagine being part of a decentralized social media platform where every post, like, or comment you make earns you real-life reward</p>
+
           <a href="/nft-membership" className="btn px-8 py-3 text-lg smartbtn hover:bg-red-600 transition duration-300">Get Membership Pass</a>
         </div>
       </div>
